@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1a -PYTHON</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #ddd);
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        pre {
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            overflow-x: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Program 1:Develop a program to read the student details like Name, USN, and Marks 
+in three subjects.</h1>
+        <p><strong>Description:</strong> This program demonstrates a basic implementation of an array traversal.</p>
+        
+        <h2>Code:</h2>
+        <pre>
+Name = input("Enter name of student: ")
+USN = input("Enter USN of student: ")
+print("Enter marks in three subjects: Physics,Chemistry and Maths : ")
+marks_Phy = int(input("Enter marks in Physics: "))
+marks_Che = int(input("Enter marks in Chemistry: "))
+marks_Mat = int(input("Enter marks in Maths: "))
+total_Marks = marks_Phy + marks_Che + marks_Mat
+perct = total_Marks/3
+print("The details of student are :")
+print("Name: ",Name)
+print("USN: ",USN)
+print("Marks scored in 3 subjects: ")
+print("Physics: ",marks_Phy)
+print("Chemistry: ",marks_Che)
+print("Maths: ",marks_Mat)
+print("Total Marks : %3d, Percentage : %5.2f" % (total_Marks,perct))
+ </pre>
+        
+        <h2>Output:</h2>
+        <pre>
+Enter name of student: Kiran Parekh
+Enter USN of student: 1KG21EC126
+Enter marks in three subjects: Physics,Chemistry and Maths: 
+Enter marks in Physics: 67
+Enter marks in Chemistry: 73
+Enter marks in Maths: 83
+The details of student are :
+Name: Kiran Parekh
+USN: 1KG21EC126
+Marks scored in 3 subjects: 
+Physics: 67
+Chemistry: 73
+Maths: 83
+Total Marks : 223, Percentage : 74.33
+ </pre>
+        
+        <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
+    </div>
+</body>
+</html>
